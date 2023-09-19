@@ -4,6 +4,8 @@ import { MedicalHistoryIcon } from "./medical-history";
 import { PatientOverviewIcon } from "./patient-overview-icon";
 import { PrescriptionsIcon } from "./prescriptions-icon";
 import { DiagnosticToolsIcon } from "./diagnostic-tools-icon";
+import { NotificationsIcon } from "./notifications-icon";
+import { MessagesIcon } from "./messages-icon";
 
 export {
   Logo,
@@ -12,4 +14,6 @@ export {
   PatientOverviewIcon,
   PrescriptionsIcon,
   DiagnosticToolsIcon,
+  NotificationsIcon,
+  MessagesIcon,
 };
