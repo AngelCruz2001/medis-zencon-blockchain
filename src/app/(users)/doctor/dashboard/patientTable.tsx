@@ -19,13 +19,17 @@ export default function PatientTable() {
         switch (columnKey) {
             case "name":
                 return (
-                    <User
-                        avatarProps={{ radius: "lg", src: user.avatar }}
-                        description={user.email}
-                        name={cellValue}
-                    >
-                        {user.email}
-                    </User>
+                    // <User
+                    //     avatarProps={{ radius: "lg", src: user.avatar }}
+                    //     description={user.email}
+                    //     name={cellValue}
+                    // >
+                    //     {user.email}
+                    // </User>
+                    <div>
+                        <h3>{cellValue}</h3>
+                        <p className="text-xs text-gray-400">{user.email}</p>
+                    </div>
                 );
             case "appointmentDate":
                 return (
