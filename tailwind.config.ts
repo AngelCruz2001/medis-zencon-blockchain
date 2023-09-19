@@ -1,23 +1,24 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-        boxShadow: {
-          light: "0 0 10px 0 #DCEDEB",
-        }
+      boxShadow: {
+        light: "0 0 10px 0 #DCEDEB",
+      },
     },
   },
-  darkMode: 'class',
-  plugins: [nextui({
-      defaultTheme: 'light',
+  darkMode: "class",
+  plugins: [
+    nextui({
+      defaultTheme: "light",
       themes: {
         light: {
           colors: {
@@ -30,15 +31,15 @@ const config: Config = {
               400: "#38E0C2",
               500: "#00CCBA",
               600: "#00AEAF",
-              700:"#008592",
+              700: "#008592",
               800: "#006076",
-              900: "#004661"
-            }
-          }
+              900: "#004661",
+            },
+          },
         },
         dark: {
           colors: {
-            // background: "#", 
+            // background: "#",
             primary: {
               DEFAULT: "#00CCBA",
               100: "#C9FCE5",
@@ -47,13 +48,14 @@ const config: Config = {
               400: "#38E0C2",
               500: "#00CCBA",
               600: "#00AEAF",
-              700:"#008592",
+              700: "#008592",
               800: "#006076",
-              900: "#004661"
-            }
-          }
-        }
-      }
-    })],
-}
-export default config
+              900: "#004661",
+            },
+          },
+        },
+      },
+    }),
+  ],
+};
+export default config;
