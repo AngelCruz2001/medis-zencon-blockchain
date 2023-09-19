@@ -19,12 +19,12 @@ const links: Link[] = [
     },
     {
         label: "Patient Overview",
-        href: pathname + "/patients",
+        href: pathname + "/patient-overview",
         Icon: PatientOverviewIcon
     },
     {
         label: "Medical History",
-        href: pathname + "/medicalhistory",
+        href: pathname + "/medical-history",
         Icon: MedicalHistoryIcon
     },
     {

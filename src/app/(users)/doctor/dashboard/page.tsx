@@ -80,7 +80,7 @@ export default function Page() {
 
       <Stats />
 
-      <div className='flex w-full h-[390px] gap-4'>
+      <div className='flex w-full h-[436px] gap-4 items-end'>
         <section className='flex w-3/4 h-full'>
           <PatientTable />
         </section>
@@ -88,8 +88,6 @@ export default function Page() {
           <MostPrescribed />
         </section>
       </div>
-
-
 
     </div>
   )
