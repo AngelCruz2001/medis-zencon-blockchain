@@ -40,7 +40,7 @@ export default function Page() {
                             {
                                 diagnostics.map(({ id, result, symptoms }) => (
                                     <li className="bg-primary-100 relative after:absolute after:top-0 after:left-0 after:w-1 after:h-full after:bg-primary py-5 px-4" key={id}>
-                                        <h3 className="text-md" >{result}</h3>
+                                        <h3 className="text-md font-medium" >{result}</h3>
                                         <p className="text-sm text-gray-400">{symptoms}</p>
                                     </li>
                                 ))
