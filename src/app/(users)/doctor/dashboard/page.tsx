@@ -1,7 +1,4 @@
 'use client'
-import { Button } from '@nextui-org/button';
-import { Card, CardBody, CardHeader, Checkbox } from '@nextui-org/react';
-import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@nextui-org/react";
 import { useState } from 'react';
 import PatientTable from './patientTable';
 import Stats from './stats';

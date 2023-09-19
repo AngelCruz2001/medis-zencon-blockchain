@@ -34,7 +34,7 @@ const links: Link[] = [
     },
     {
         label: "Diagnostic Tools",
-        href: pathname + "/diagnostic",
+        href: pathname + "/diagnostic-tools",
         Icon: DiagnosticToolsIcon
     }
 ]

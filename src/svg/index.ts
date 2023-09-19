@@ -6,6 +6,7 @@ import { PrescriptionsIcon } from "./prescriptions-icon";
 import { DiagnosticToolsIcon } from "./diagnostic-tools-icon";
 import { NotificationsIcon } from "./notifications-icon";
 import { MessagesIcon } from "./messages-icon";
+import { AddIcon } from "./add-icon";
 
 export {
   Logo,
@@ -16,4 +17,5 @@ export {
   DiagnosticToolsIcon,
   NotificationsIcon,
   MessagesIcon,
+  AddIcon,
 };
