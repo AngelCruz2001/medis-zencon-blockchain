@@ -70,21 +70,24 @@ export default function PatientTable() {
     }, []);
 
     return (
-        <Table aria-label="Appointments dates">
-            <TableHeader columns={columns}>
-                {(column) => (
-                    <TableColumn key={column.uid} align={column.uid === "actions" ? "center" : "start"}>
-                        {column.name}
-                    </TableColumn>
-                )}
-            </TableHeader>
-            <TableBody items={patientRecords}>
-                {(item) => (
-                    <TableRow key={item.id}>
-                        {(columnKey) => <TableCell>{renderCell(item, columnKey)}</TableCell>}
-                    </TableRow>
-                )}
-            </TableBody>
-        </Table>
+        <div className="w-full">
+            <h1 className="text-xl font-semibold mt-3 mb-2">Appointments</h1>
+            <Table aria-label="Appointments dates">
+                <TableHeader columns={columns}>
+                    {(column) => (
+                        <TableColumn key={column.uid} align={column.uid === "actions" ? "center" : "start"}>
+                            {column.name}
+                        </TableColumn>
+                    )}
+                </TableHeader>
+                <TableBody items={patientRecords}>
+                    {(item) => (
+                        <TableRow key={item.id}>
+                            {(columnKey) => <TableCell>{renderCell(item, columnKey)}</TableCell>}
+                        </TableRow>
+                    )}
+                </TableBody>
+            </Table>
+        </div>
     );
 }
