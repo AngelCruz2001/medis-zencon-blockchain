@@ -4,6 +4,7 @@ import { Card, CardBody, CardHeader, Checkbox } from '@nextui-org/react';
 import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@nextui-org/react";
 import { useState } from 'react';
 import PatientTable from './patientTable';
+import Stats from './stats';
 export default function Page() {
 
   const appointmentsData = [
@@ -78,14 +79,15 @@ export default function Page() {
 
   return (
     <div className='h-full w-full'>
-      <div className='flex w-full h-[500px] overflow-hidden'>
-     
-      <section className='flex w-1/2'>
-      </section>
+      <Stats />
+      <div className='flex w-full h-[500px] gap-4'>
 
-      <section className='flex w-3/4 h-full overflow-y-auto'>
-        <PatientTable />
-      </section>
+        <section className='flex flex-1'>
+        </section>
+
+        <section className='flex w-3/4 h-full overflow-y-auto'>
+          <PatientTable />
+        </section>
 
       </div>
 
