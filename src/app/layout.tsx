@@ -4,7 +4,7 @@ import { Poppins } from 'next/font/google'
 
 import { Providers } from './providers'
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '400', '700'] })
+const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
   title: 'Medis App',

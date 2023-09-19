@@ -79,15 +79,12 @@ export default function Page() {
   return (
     <div className='h-full w-full'>
       <div className='flex w-full h-[500px] overflow-hidden'>
+     
+      <section className='flex w-1/2'>
+      </section>
 
       <section className='flex w-3/4 h-full overflow-y-auto'>
         <PatientTable />
-      </section>
-     
-      <section className='flex w-1/2'>
-        
-        <PatientTable />
-
       </section>
 
       </div>
