@@ -9,7 +9,6 @@ export default function Stats() {
 
     return (
         <section className='flex gap-3 w-full mb-5' >
-
             <Card className='w-72'>
                 <CardBody>
                     <div className='flex items-start justify-start gap-3'>

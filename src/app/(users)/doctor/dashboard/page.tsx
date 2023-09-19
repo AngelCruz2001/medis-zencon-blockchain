@@ -5,6 +5,7 @@ import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from 
 import { useState } from 'react';
 import PatientTable from './patientTable';
 import Stats from './stats';
+import { MostPrescribed } from './MostPrescribed';
 export default function Page() {
 
   const appointmentsData = [
@@ -79,17 +80,18 @@ export default function Page() {
 
   return (
     <div className='h-full w-full'>
+
       <Stats />
-      <div className='flex w-full h-[500px] gap-4'>
 
-        <section className='flex flex-1'>
-        </section>
-
-        <section className='flex w-3/4 h-full overflow-y-auto'>
+      <div className='flex w-full h-[390px] gap-4'>
+        <section className='flex w-3/4 h-full'>
           <PatientTable />
         </section>
-
+        <section className='flex'>
+          <MostPrescribed />
+        </section>
       </div>
+
 
 
     </div>
