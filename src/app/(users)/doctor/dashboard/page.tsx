@@ -105,6 +105,7 @@ export default function Page() {
           </Table>
         </CardBody>
       </Card>
+
     </div>
   )
 }
