@@ -74,7 +74,7 @@ export default function Page() {
           <p className='text-2xl text-gray-400'>Appointmets today</p>
         </CardHeader>
         <CardBody>
-          <Table aria-label="Appointments for the day">
+          <Table removeWrapper aria-label="Appointments for the day">
             <TableHeader>
               <TableColumn>Patient</TableColumn>
               <TableColumn>Hour</TableColumn>
