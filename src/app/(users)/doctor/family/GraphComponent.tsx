@@ -110,7 +110,7 @@ const GraphComponent: React.FC<GraphProps> = ({ data }) => {
 
   return (
     <div className="w-full h-full">
-      <svg ref={svgRef}></svg>;
+      <svg ref={svgRef}></svg>
     </div>
   );
 };
