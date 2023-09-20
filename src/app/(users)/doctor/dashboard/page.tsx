@@ -82,19 +82,23 @@ export default function Page() {
 
       <Stats />
 
-      <div className='flex w-full h-[436px] gap-4 items-end'>
+      <div className='flex flex-wrap w-full h-[436px] gap-4 items-end'>
         <section className='flex w-3/4 h-full'>
           <PatientTable />
         </section>
         <section className='flex'>
           <MostPrescribed />
         </section>
-        
+
       </div>
       <div className="flex w-full mt-3">
+<<<<<<< HEAD
 
-      <Map/>
+        <Map />
 
+=======
+        <Map />
+>>>>>>> 05abdc41f9c7783c5ebea53a778e91174f75ffb2
       </div>
       <div>
       </div>

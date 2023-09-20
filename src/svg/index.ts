@@ -8,6 +8,7 @@ import { NotificationsIcon } from "./notifications-icon";
 import { MessagesIcon } from "./messages-icon";
 import { AddIcon } from "./add-icon";
 import { LogoutIcon } from "./logout-icon";
+import { LogoSmallIcon } from "./logo-small";
 
 export {
   Logo,
@@ -19,5 +20,6 @@ export {
   NotificationsIcon,
   MessagesIcon,
   AddIcon,
-  LogoutIcon
+  LogoutIcon,
+  LogoSmallIcon,
 };

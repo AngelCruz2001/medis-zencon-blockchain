@@ -43,7 +43,7 @@ export const MostPrescribed = () => {
                             const last = index === medications.length - 1;
                             return (
                                 <>
-                                    <div className='flex items-center gap-3 py-2 text-sm'>
+                                    <div key={index} className='flex items-center gap-3 py-2 text-sm'>
                                         <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" size="sm" />
                                         <span>{medication.name}</span>
                                         <span className="text-xs ml-auto text-gray-400" >{medication.quantity} times</span>

@@ -3,7 +3,20 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Circle } from 'react-leaflet';
+import L from 'leaflet';
+const icon = L.icon({
+    iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png', // Cambia esta URL a la imagen que desees
+    iconSize: [25, 41], // Tamaño del icono
+    iconAnchor: [12, 41], // Punto del icono que se posicionará exactamente en la marca de ubicación
+    popupAnchor: [0, -41] // Punto desde el que se abrirá el popup
+});
 
+const locationIcon = L.icon({
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/2838/2838912.png',
+    iconSize: [25, 30],
+    iconAnchor: [12, 31],
+    popupAnchor: [0, -41]
+});
 export const Map = () => {
     return (
         <Card className='w-full'>
@@ -27,11 +40,11 @@ export const Map = () => {
                                 I am a circle.
                             </Popup>
                         </Circle>
-                        <Marker position={[-22.9866, -43.1982]}>
-                            <Popup>
-                                A pretty CSS3 popup. <br /> Easily customizable.
-                            </Popup>
-                        </Marker>
+                        <Marker position={[-22.9866, -43.1982]} icon={locationIcon}>
+    <Popup>
+        A pretty CSS3 popup. <br /> Easily customizable.
+    </Popup>
+</Marker>
                     </MapContainer>
 
 
