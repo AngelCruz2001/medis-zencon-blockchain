@@ -1,6 +1,6 @@
 import { Input, Textarea, Button, Divider } from '@nextui-org/react';
 import { useFieldArray, useForm } from 'react-hook-form';
-import { MedicalRecord } from './interfaces';
+import { PrescriptionFormType } from './interfaces';
 
 export const PrescriptionForm = () => {
     const { handleSubmit, control, register, formState: { errors } } = useForm({
@@ -25,7 +25,7 @@ export const PrescriptionForm = () => {
         name: 'prescription'
     })
 
-    const onSubmit = (data: MedicalRecord) => {
+    const onSubmit = (data: PrescriptionFormType) => {
         console.log({ data })
     }
     return (
