@@ -6,7 +6,7 @@ import { zscSigner } from "ethersjs-nomo-plugins/dist/ethersjs_provider";
 // Dirección del contrato de Medis
 const MedisContractAddress = "0xbDc9cE5eB4AD9A7a847a6ecc806eB435d51C7c97";
 
-export async function getInfo(): Promise<void> {
+export async function getInfo() {
     console.log('Fetching Info...')
     const contract = new ethers.Contract(MedisContractAddress, medisAbi, zscSigner);
     var data = await contract.getData();

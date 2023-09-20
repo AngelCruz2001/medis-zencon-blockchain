@@ -1,4 +1,5 @@
 export interface DisplayAppointment {
+  folio: string;
   date: string;
   doctorName: string;
   clinic: {
