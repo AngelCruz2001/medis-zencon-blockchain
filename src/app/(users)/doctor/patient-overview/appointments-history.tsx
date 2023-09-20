@@ -20,9 +20,9 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
             <ul className="flex gap-4 flex-wrap" >
                 {
                     appointments.map(({ date, diagnostic, weight, patientAge, }, index) => {
-
+                        const isLast = index === appointments.length - 1
                         return (
-                            <li key={index} className="min-w-[250px] max-w-full">
+                            <li key={index} className={`min-w-[250px] max-w-full ${isLast ? '' : 'flex-1'}`}>
                                 <Card isPressable className="w-full hover:bg-primary-50" onClick={() => handleOpen(index)}>
                                     <CardBody>
                                         <span className="text-xs ml-auto mb-2 text-primary font-medium" >{date}

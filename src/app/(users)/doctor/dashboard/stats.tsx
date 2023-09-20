@@ -8,7 +8,7 @@ import { DocumentIcon } from './icons/document'
 export default function Stats() {
 
     return (
-        <section className='flex flex-wrap gap-3 w-full mb-5' >
+        <section className='flex flex-wrap gap-3 w-full mb-5 items-end' >
             <Card className='min-w-64'>
                 <CardBody>
                     <div className='flex items-start justify-start gap-3'>
