@@ -89,12 +89,10 @@ export default function Page() {
         <section className='flex'>
           <MostPrescribed />
         </section>
-        
+
       </div>
       <div className="flex w-full mt-3">
-
-      <Map/>
-
+        <Map />
       </div>
       <div>
       </div>

@@ -12,9 +12,9 @@ const icon = L.icon({
 });
 
 const locationIcon = L.icon({
-    iconUrl: 'https://i.imgur.com/0xPEf72.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
+    iconUrl: 'https://cdn-icons-png.flaticon.com/128/2838/2838912.png',
+    iconSize: [25, 30],
+    iconAnchor: [12, 31],
     popupAnchor: [0, -41]
 });
 export const Map = () => {
