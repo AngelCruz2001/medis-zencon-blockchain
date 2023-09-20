@@ -3,7 +3,7 @@ import { useState } from 'react';
 import PatientTable from './patientTable';
 import Stats from './stats';
 import { MostPrescribed } from './MostPrescribed';
-import { Mapa } from './mapa';
+import { Map } from './map';
 import { CardBody } from '@nextui-org/react';
 export default function Page() {
 
@@ -91,8 +91,9 @@ export default function Page() {
         </section>
         
       </div>
-      <div className="flex w-full h-[436px] gap-4 items-end">
-      <Mapa/>
+      <div className="flex w-full mt-3">
+
+      <Map/>
 
       </div>
       <div>

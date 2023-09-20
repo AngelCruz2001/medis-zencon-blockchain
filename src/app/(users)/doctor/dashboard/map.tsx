@@ -3,36 +3,7 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-interface Medication {
-    quantity: number,
-    name: string
-    image: string
-}
-
-const medications = [
-    {
-        quantity: 150,
-        name: 'Ibuprofen',
-        image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
-    },
-    {
-        quantity: 113,
-        name: 'Paracetamol',
-        image: 'https://i.pravatar.cc/150?u=b042581f4e29026024e'
-    },
-    {
-        quantity: 96,
-        name: 'Aspirin',
-        image: 'https://i.pravatar.cc/150?u=c042581f4e29026024f'
-    },
-    {
-        quantity: 48,
-        name: 'Lisinopril',
-        image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
-    },
-]
-
-export const Mapa = () => {
+export const Map = () => {
     return (
         <Card className='w-full'>
             <CardBody>
@@ -59,11 +30,5 @@ export const Mapa = () => {
                 </div>
             </CardBody>
         </Card>
-
-
-
-
-
-
     )
 }
