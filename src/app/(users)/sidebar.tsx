@@ -18,14 +18,9 @@ const links: Link[] = [
         Icon: DashboardIcon
     },
     {
-        label: "Patient Overview",
-        href: pathname + "/patient-overview",
+        label: "Patients",
+        href: pathname + "/patients",
         Icon: PatientOverviewIcon
-    },
-    {
-        label: "Medical History",
-        href: pathname + "/medical-history",
-        Icon: MedicalHistoryIcon
     },
     {
         label: "Prescriptions",
@@ -37,11 +32,6 @@ const links: Link[] = [
         href: pathname + "/diagnostic-tools",
         Icon: DiagnosticToolsIcon
     },
-    {
-        label: "Log out",
-        href: pathname + "/logout",
-        Icon: LogoutIcon
-    }
 ]
 
 const linkVariants = {
@@ -52,7 +42,7 @@ const linkVariants = {
 export const Sidebar = () => {
     const pathname = usePathname();
     return (
-        <nav className="bg-white h-[100vh] max-h-[100vh] w-[280px] py-4 px-5 shadow-light z-10" >
+        <nav className="bg-white h-[100vh] max-h-[100vh] w-[280px] py-4 px-5 shadow-light z-20" >
             <div className="w-[80%] mx-auto">
                 <Logo />
             </div>

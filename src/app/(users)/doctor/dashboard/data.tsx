@@ -16,7 +16,7 @@ const patientRecords = [
         status: "paid",
         age: "29",
         avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-        email: "+52 (618) 325 - 92 - 26"
+        email: "+52 618 321 9226"
     },
     {
         id: 2,
@@ -26,7 +26,7 @@ const patientRecords = [
         status: "canceled",
         age: "35",
         avatar: "https://i.pravatar.cc/150?u=b042581f4e29026024e",
-        email: "lisa.johnson@example.com"
+        email: "+52 618 349 2444"
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const patientRecords = [
         status: "paid",
         age: "42",
         avatar: "https://i.pravatar.cc/150?u=c042581f4e29026024f",
-        email: "michael.smith@example.com"
+        email: "+1 424 349 2262"
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ const patientRecords = [
         status: "pending",
         age: "28",
         avatar: "https://i.pravatar.cc/150?u=d042581f4e290260250",
-        email: "sarah.davis@example.com"
+        email: "+52 618 321 9226"
     },
     {
         id: 5,
@@ -56,7 +56,7 @@ const patientRecords = [
         status: "pending",
         age: "37",
         avatar: "https://i.pravatar.cc/150?u=e042581f4e290260251",
-        email: "john.wilson@example.com"
+        email: "+1 114 395 2262"
     },
     {
         id: 6,
@@ -66,7 +66,7 @@ const patientRecords = [
         status: "paid",
         age: "31",
         avatar: "https://i.pravatar.cc/150?u=f042581f4e290260252",
-        email: "emily.rodriguez@example.com"
+        email: "+52 618 321 9226"
     }
 ];
 
