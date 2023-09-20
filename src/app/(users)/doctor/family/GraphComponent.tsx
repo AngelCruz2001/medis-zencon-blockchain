@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import Swal from "sweetalert2";
+import dayjs from "dayjs";
 
 interface GraphProps {
   data: any; // Asegúrate de definir el tipo de datos adecuado
@@ -58,8 +59,9 @@ const GraphComponent: React.FC<GraphProps> = ({ data }) => {
       .attr("fill", (d: any) => color(d.group))
       .on("click", (event: any, d: any) => {
         Swal.fire({
-          icon: "info",
-          title: d.name
+          title: d.name,
+          text:
+            "Birth Day:" + " " + dayjs(d.birthDay).format("MMMM D, YYYY h:mm A"),
         });
       });
 
