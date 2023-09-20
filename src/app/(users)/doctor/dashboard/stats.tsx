@@ -26,7 +26,7 @@ export default function Stats() {
                             />
                         </div>
                         <div>
-                            <h3 className='text-gray-500 font-medium'>Today's completed appointments</h3>
+                            <h3 className='text-gray-500 font-medium'>Today&apos;s completed appointments</h3>
                             <p className='text-4xl font-medium mt-2 mb-4'>7</p>
                             <p className='text-sm text-gray-600'>
                                 <span className='font-semibold'>3</span> remaining

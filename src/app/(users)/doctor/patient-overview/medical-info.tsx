@@ -63,7 +63,7 @@ export const MedicalInfo = ({ canEdit }: { canEdit: boolean }) => {
 
                     if (canEdit) {
                         return (
-                            <Dropdown>
+                            <Dropdown key={index} >
                                 <DropdownTrigger>
                                     <Card shadow='sm' isPressable={canEdit}>
                                         <CardBody>

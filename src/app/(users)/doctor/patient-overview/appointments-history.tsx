@@ -85,7 +85,7 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
                                                             prescription.map((prescriptionItem, index) => {
                                                                 const isLast = index === prescription.length - 1
                                                                 return (
-                                                                    <div>
+                                                                    <div key={index} >
                                                                         <p className="text-primary">{prescriptionItem.name}</p>
                                                                         <p className="text-gray-400">{prescriptionItem.instructions}
                                                                         </p>
