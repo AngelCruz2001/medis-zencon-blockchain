@@ -57,7 +57,7 @@ export const Sidebar = () => {
                         return (
                             <li key={index}>
                                 <Link href={href} className={`flex items-center gap-3 text-sm rounded-md p-2 transition-colors ${isActive ? linkVariants.active : linkVariants.disbled}`} >
-                                    <span className="h-5 w-5" ><Icon /></span>
+                                    <span className="h-5 w-5 flex items-center justify-center" ><Icon /></span>
                                     {/* <Icon /> */}
                                     <span className="hidden md:inline" >
                                         {label}

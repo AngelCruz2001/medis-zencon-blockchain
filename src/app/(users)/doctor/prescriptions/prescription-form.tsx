@@ -87,7 +87,7 @@ export const PrescriptionForm = ({ patient }: {
                 <div className='flex w-full flex-col max-h-[350px] mb-4 gap-2 overflow-y-auto overflow-x-hidden'>
                     {
                         fields.map((field, index) => (
-                            <div key={field.id} className='flex gap-4 items-center'>
+                            <div key={field.id} className='flex gap-2 md:gap-4 items-center'>
                                 <Input
                                     isRequired
                                     type="text"
@@ -104,7 +104,7 @@ export const PrescriptionForm = ({ patient }: {
                                 <Button onClick={() => {
                                     remove(index)
                                 }} isIconOnly color='danger' aria-label='delete medicines'>
-                                    <span className='text-2xl'>-</span>
+                                    <span className='text-sm md:last:text-2xl'>-</span>
                                 </Button>
                             </div>
                         ))
