@@ -51,8 +51,16 @@ export const appointments: DisplayAppointment[] = [
 
     prescription: [
       {
-        name: "Cold Medication",
-        instructions: "Take as directed on the label.",
+        name: "Ibuprofen 400mg",
+        instructions: "Take a pill every 4-6 hours as needed.",
+      },
+      {
+        name: "amoxicillin",
+        instructions: "Take a pill every 8 hours for 5 days",
+      },
+      {
+        name: "Fluids",
+        instructions: "Drink lots of water and clear fluids.",
       },
       {
         name: "Rest",
@@ -79,8 +87,16 @@ export const appointments: DisplayAppointment[] = [
 
     prescription: [
       {
-        name: "Antihistamines",
-        instructions: "Take as prescribed by the doctor and avoid allergens.",
+        name: "Ibuprofen 400mg",
+        instructions: "Take a pill every 4-6 hours as needed.",
+      },
+      {
+        name: "amoxicillin",
+        instructions: "Take a pill every 8 hours for 5 days",
+      },
+      {
+        name: "Fluids",
+        instructions: "Drink lots of water and clear fluids.",
       },
     ],
   },
@@ -103,8 +119,16 @@ export const appointments: DisplayAppointment[] = [
 
     prescription: [
       {
-        name: "Antiemetic Medication",
-        instructions: "Take as prescribed by the doctor.",
+        name: "Ibuprofen 400mg",
+        instructions: "Take a pill every 4-6 hours as needed.",
+      },
+      {
+        name: "amoxicillin",
+        instructions: "Take a pill every 8 hours for 5 days",
+      },
+      {
+        name: "Fluids",
+        instructions: "Drink lots of water and clear fluids.",
       },
       {
         name: "Hydration",
@@ -130,8 +154,16 @@ export const appointments: DisplayAppointment[] = [
 
     prescription: [
       {
-        name: "Antibiotics",
-        instructions: "Take as prescribed by the doctor.",
+        name: "Ibuprofen 400mg",
+        instructions: "Take a pill every 4-6 hours as needed.",
+      },
+      {
+        name: "amoxicillin",
+        instructions: "Take a pill every 8 hours for 5 days",
+      },
+      {
+        name: "Fluids",
+        instructions: "Drink lots of water and clear fluids.",
       },
       {
         name: "Saline Nasal Spray",
