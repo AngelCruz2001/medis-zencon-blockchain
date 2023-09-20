@@ -2,6 +2,7 @@ import { DisplayAppointment, Patient } from "./interfaces";
 
 export const appointments: DisplayAppointment[] = [
   {
+    folio: "512412",
     date: "20 Sep 2019",
     doctorName: "Dr. Johnson",
     clinic: {
@@ -34,6 +35,7 @@ export const appointments: DisplayAppointment[] = [
     ],
   },
   {
+    folio: "512412",
     date: "04 May 2020",
     doctorName: "Dr. Johnson",
     clinic: {
@@ -69,6 +71,7 @@ export const appointments: DisplayAppointment[] = [
     ],
   },
   {
+    folio: "512412",
     date: "16 Sep 2020",
     doctorName: "Dr. Johnson",
     clinic: {
@@ -101,6 +104,7 @@ export const appointments: DisplayAppointment[] = [
     ],
   },
   {
+    folio: "512412",
     date: "04 Jul 2021",
     doctorName: "Dr. Johnson",
     clinic: {
@@ -137,6 +141,7 @@ export const appointments: DisplayAppointment[] = [
     ],
   },
   {
+    folio: "512412",
     date: "09 March 2023",
     doctorName: "Dr. Johnson",
     clinic: {

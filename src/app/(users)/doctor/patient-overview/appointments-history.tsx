@@ -12,9 +12,6 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
         onOpen();
     }
 
-    const defaultContent =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
     return (
         <>
             <ul className="flex gap-4 flex-wrap" >
@@ -43,7 +40,7 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
             <Modal size="4xl" isOpen={isOpen} onOpenChange={onOpenChange}>
                 <ModalContent>
                     {(onClose) => {
-                        const { additionalNotes, date, diagnostic, doctorName, followUp, height, weight, patientAge, prescription, summary, clinic } = activeAppointment;
+                        const { additionalNotes, date, folio, diagnostic, doctorName, followUp, height, weight, patientAge, prescription, summary, clinic } = activeAppointment;
                         return (
                             <>
                                 <ModalHeader className="flex flex-col gap-1">
@@ -72,7 +69,9 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
 
                                         <div className="flex-1">
                                             <div className="ml-4">
-                                                <h2 className="text-xl font-semibold">Diagnostic</h2>
+                                                <span className="block w-full text-right text-xs text-primary">#{folio}</span>
+                                                <span className="block text-xs text-gray-400">{date}</span>
+                                                <h2 className="text-xl font-semibold mt-2">Diagnostic</h2>
                                                 <p className="text-gray-400" >{diagnostic}</p>
                                             </div>
                                             <div className="mt-5">

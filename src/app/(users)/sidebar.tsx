@@ -42,7 +42,7 @@ const linkVariants = {
 export const Sidebar = () => {
     const pathname = usePathname();
     return (
-        <nav className="bg-white h-[100vh] max-h-[100vh] md:w-[250px] py-4 px-5 shadow-light z-20" >
+        <nav className="bg-white h-[100vh] max-h-[100vh] md:w-[250px] py-4 px-2 md:px-5 shadow-light z-20" >
             <div className="w-[80%] mx-auto hidden md:flex">
                 <Logo />
             </div>

@@ -49,7 +49,7 @@ export const PrescriptionForm = ({ patient }: {
                     label="height"
                     type="number"
                     placeholder=""
-                    className='w-32'
+                    className='w-24 flex-1 md:flex-none md:w-32'
                     endContent={
                         <div className="pointer-events-none flex items-center">
                             <span className="text-gray-400 text-small">cm</span>
@@ -62,7 +62,7 @@ export const PrescriptionForm = ({ patient }: {
                     label="weight"
                     type="number"
                     placeholder=""
-                    className='w-32'
+                    className='w-24 flex-1 md:flex-none md:w-32'
                     endContent={
                         <div className="pointer-events-none flex items-center">
                             <span className="text-gray-400 text-small">kg</span>
@@ -131,7 +131,7 @@ export const PrescriptionForm = ({ patient }: {
                     label="Follow up instructions"
                     labelPlacement="outside"
                     placeholder="ex. Schedule a follow-up appointment for December, Monitor blood pressure at home regularly, etc..."
-                    className="w-[50%]"
+                    className="md:w-[50%]"
                     {...register('followUp')}
                 />
                 <Textarea

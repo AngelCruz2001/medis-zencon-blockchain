@@ -11,11 +11,11 @@ export default function Page() {
 
       <Stats />
 
-      <div className='flex w-full h-[436px] gap-4 items-end'>
-        <section className='flex w-3/4 h-full'>
+      <div className='flex w-full min-h-[436px] flex-wrap md:flex-nowrap gap-4 items-end'>
+        <section className='flex flex-1 w-3/4 h-full'>
           <PatientTable />
         </section>
-        <section className='flex'>
+        <section className='flex flex-1 md:flex-none'>
           <MostPrescribed />
         </section>
 

@@ -9,7 +9,7 @@ export default function Stats() {
 
     return (
         <section className='flex flex-wrap gap-3 w-full mb-5 items-end' >
-            <Card className='min-w-64'>
+            {/* <Card className='min-w-64'>
                 <CardBody>
                     <div className='flex items-start justify-start gap-3'>
                         <div className=' rounded-full fill-primary bg-primary p-2' >
@@ -34,7 +34,7 @@ export default function Stats() {
                         </div>
                     </div>
                 </CardBody>
-            </Card>
+            </Card> */}
             <Card className='w-64'>
                 <CardBody>
                     <div className='flex items-start justify-start gap-3'>
