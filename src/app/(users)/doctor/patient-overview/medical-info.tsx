@@ -73,7 +73,7 @@ export const MedicalInfo = ({ canEdit }: { canEdit: boolean }) => {
                                 </DropdownTrigger>
                                 <DropdownMenu aria-label="Static Actions">
                                     <DropdownItem key="delete" className="text-danger" color="danger" onClick={() => onDelete(allergy)}>
-                                        Delete allergie
+                                        Remove allergie
                                     </DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
@@ -103,6 +103,7 @@ export const MedicalInfo = ({ canEdit }: { canEdit: boolean }) => {
                                 className='py-3 flex flex-col gap-2'
                                 onSubmit={handleSubmit(hanldeSubmit)}>
                                 <Input
+                                    labelPlacement="outside"
                                     type="text"
                                     defaultValue=""
                                     className="max-w-xs"
