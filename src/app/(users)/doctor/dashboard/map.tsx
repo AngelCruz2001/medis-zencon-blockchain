@@ -15,7 +15,7 @@ export const Map = () => {
 
                     <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: "300px", width: "100%" }}>
                         <TileLayer
-                            url="https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png"
+                            url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
                             maxZoom={19}
                         />
                         <Marker position={[51.505, -0.09]}>
