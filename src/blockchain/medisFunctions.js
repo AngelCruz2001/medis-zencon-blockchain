@@ -14,7 +14,7 @@ export async function getInfo() {
     return data;
 }
 
-export async function saveData(data): Promise<void> {
+export async function saveData(data){
     console.log('Saving info to contract')
     const contract = new ethers.Contract(MedisContractAddress, medisAbi, zscSigner);
     const tx = await contract.saveData(data,'2021-05-20');
