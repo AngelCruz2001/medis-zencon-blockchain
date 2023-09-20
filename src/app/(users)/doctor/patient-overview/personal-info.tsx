@@ -11,7 +11,7 @@ export const PersonalInfo = ({ canEdit, patient }: { canEdit: boolean, patient: 
             street: patient.address.street,
             street2: patient.address.street2,
             city: patient.address.city,
-            zip: patient.address.zip,
+            zip: patient.address.zip, 
             urbanization: patient.address.urbanization
         }
     });
