@@ -92,13 +92,9 @@ export default function Page() {
 
       </div>
       <div className="flex w-full mt-3">
-<<<<<<< HEAD
 
         <Map />
 
-=======
-        <Map />
->>>>>>> 05abdc41f9c7783c5ebea53a778e91174f75ffb2
       </div>
       <div>
       </div>
