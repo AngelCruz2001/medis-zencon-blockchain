@@ -5,7 +5,7 @@ import { revalidatePath } from "next/cache";
 
 import User from "../../models/user.model";
 
-import { connectToDB } from "../mongodb";
+import connectToDB from "../mongodb";
 
 interface Params {
   name: String;
@@ -25,29 +25,27 @@ interface Params {
   // lng: String;
 }
 
-export async function addUser(
-  {
-    name,
-    // lastName,
-    // addressLine1,
-    // addressLine2,
-    // zipCode,
-    // city,
-    // country,
-    // phoneNumber,
-    // email,
-    // password,
-    // wallet,
-    // role,
-    // status,
-    // lat,
-    // lng
-}:
- Params): Promise<void> {
+export async function addUser({
+  name,
+}: // lastName,
+// addressLine1,
+// addressLine2,
+// zipCode,
+// city,
+// country,
+// phoneNumber,
+// email,
+// password,
+// wallet,
+// role,
+// status,
+// lat,
+// lng
+Params): Promise<void> {
   try {
     // connectToDB();
 
-    return console.log(name)
+    return console.log(name);
   } catch (error: any) {
     throw new Error(`Failed to create/update user: ${error.message}`);
   }

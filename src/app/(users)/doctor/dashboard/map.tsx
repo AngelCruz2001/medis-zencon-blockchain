@@ -1,4 +1,6 @@
-import { Avatar, Card, CardBody, CardHeader } from '@nextui-org/react'
+
+'use client'
+import { Card, CardBody, CardHeader } from '@nextui-org/react'
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -41,10 +43,10 @@ export const Map = () => {
                             </Popup>
                         </Circle>
                         <Marker position={[-22.9866, -43.1982]} icon={locationIcon}>
-    <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-    </Popup>
-</Marker>
+                            <Popup>
+                                A pretty CSS3 popup. <br /> Easily customizable.
+                            </Popup>
+                        </Marker>
                     </MapContainer>
 
 
