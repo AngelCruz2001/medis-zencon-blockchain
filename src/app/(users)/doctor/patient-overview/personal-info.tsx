@@ -2,10 +2,19 @@
 
 import { Tab, Input, Button } from '@nextui-org/react'
 import { useForm } from 'react-hook-form'
+import { Address, Patient } from './interfaces';
 
-export const PersonalInfo = ({ canEdit }: { canEdit: boolean }) => {
+export const PersonalInfo = ({ canEdit, patient }: { canEdit: boolean, patient: Patient }) => {
 
-    const { } = useForm();
+    const { register, handleSubmit, reset } = useForm({
+        defaultValues: {
+            street: patient.address.street,
+            street2: patient.address.street2,
+            city: patient.address.city,
+            zip: patient.address.zip,
+            urbanization: patient.address.urbanization
+        }
+    });
 
     return (
         <>
@@ -14,36 +23,36 @@ export const PersonalInfo = ({ canEdit }: { canEdit: boolean }) => {
                     isDisabled
                     type="text"
                     label="Full Name"
-                    defaultValue="Ángel Eduardo Cruz García"
                     className="max-w-xs"
+                    defaultValue={patient.fullname}
                 />
                 <Input
                     isDisabled
                     type="text"
                     label="ID"
-                    defaultValue="CRGA010603HJCNLCA4"
                     className="max-w-xs"
+                    defaultValue={patient.id}
                 />
                 <Input
                     isDisabled
                     type="text"
                     label="Gender"
-                    defaultValue="Male"
                     className="max-w-xs"
+                    defaultValue={patient.gender}
                 />
                 <Input
                     isDisabled
                     type="text"
                     label="Age"
-                    defaultValue="22"
                     className="max-w-xs"
+                    defaultValue={patient.age}
                 />
                 <Input
                     isDisabled
                     type="text"
                     label="Birthdate"
-                    defaultValue="07/03/2001"
                     className="max-w-xs"
+                    defaultValue={patient.birthdate}
                 />
             </div>
             <div className='mt-5'>
@@ -54,38 +63,43 @@ export const PersonalInfo = ({ canEdit }: { canEdit: boolean }) => {
                         isRequired
                         type="text"
                         label="Street Addres"
-                        defaultValue="Calle de la Paz 154"
                         className="max-w-xs"
+                        defaultValue={patient.address.street}
+                        {...register('street')}
                     />
                     <Input
                         isDisabled={!canEdit}
                         type="text"
                         label="Street Addres line 2"
-                        defaultValue=""
                         className="max-w-xs"
+                        defaultValue={patient.address.street2}
+                        {...register('street2')}
                     />
                     <Input
                         isDisabled={!canEdit}
                         isRequired
                         type="text"
                         label="City"
-                        defaultValue="Durango"
                         className="max-w-xs"
+                        defaultValue={patient.address.city}
+                        {...register('city')}
                     />
                     <Input
                         isDisabled={!canEdit}
                         isRequired
                         type="number"
                         label="ZIP Code"
-                        defaultValue="34000"
                         className="max-w-xs"
+                        defaultValue={patient.address.zip}
+                        {...register('zip')}
                     />
                     <Input
                         isDisabled={!canEdit}
                         type="text"
                         label="Urbanization"
-                        defaultValue=""
                         className="max-w-xs"
+                        defaultValue={patient.address.urbanization}
+                        {...register('urbanization')}
                     />
                 </form>
                 {canEdit && (

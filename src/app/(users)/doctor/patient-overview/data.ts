@@ -1,7 +1,14 @@
+import { DisplayAppointment, Patient } from "./interfaces";
+
 export const appointments: DisplayAppointment[] = [
   {
     date: "20 Sep 2019",
     doctorName: "Dr. Johnson",
+    clinic: {
+      name: "Anytown Medical Center",
+      address: "456 Oak Avenue, Anytown, USA",
+      phone: "(555) 123-4567",
+    },
     diagnostic: "Influenza",
     summary: "Patient presented with flu symptoms.",
     additionalNotes: "Prescribed antiviral medication and plenty of fluids.",
@@ -10,10 +17,15 @@ export const appointments: DisplayAppointment[] = [
     patientAge: "18",
     weight: "60 kg",
     height: "180 cm",
+
     prescription: [
       {
-        name: "Antiviral Medication",
-        instructions: "Take as prescribed by the doctor.",
+        name: "Ibuprofen 400mg",
+        instructions: "Take a pill every 4-6 hours as needed.",
+      },
+      {
+        name: "amoxicillin",
+        instructions: "Take a pill every 8 hours for 5 days",
       },
       {
         name: "Fluids",
@@ -24,6 +36,11 @@ export const appointments: DisplayAppointment[] = [
   {
     date: "04 May 2020",
     doctorName: "Dr. Johnson",
+    clinic: {
+      name: "Anytown Medical Center",
+      address: "456 Oak Avenue, Anytown, USA",
+      phone: "(555) 123-4567",
+    },
     diagnostic: "Common Cold",
     summary: "Patient presented with symptoms of a common cold.",
     additionalNotes: "Prescribed over-the-counter cold medication and rest.",
@@ -31,6 +48,7 @@ export const appointments: DisplayAppointment[] = [
     patientAge: "19",
     weight: "61 kg",
     height: "181 cm",
+
     prescription: [
       {
         name: "Cold Medication",
@@ -45,6 +63,11 @@ export const appointments: DisplayAppointment[] = [
   {
     date: "16 Sep 2020",
     doctorName: "Dr. Johnson",
+    clinic: {
+      name: "Anytown Medical Center",
+      address: "456 Oak Avenue, Anytown, USA",
+      phone: "(555) 123-4567",
+    },
     diagnostic: "Allergic Rhinitis",
     summary: "Patient presented with allergy symptoms.",
     additionalNotes:
@@ -53,6 +76,7 @@ export const appointments: DisplayAppointment[] = [
     patientAge: "20",
     weight: "62 kg",
     height: "182 cm",
+
     prescription: [
       {
         name: "Antihistamines",
@@ -63,6 +87,11 @@ export const appointments: DisplayAppointment[] = [
   {
     date: "04 Jul 2021",
     doctorName: "Dr. Johnson",
+    clinic: {
+      name: "Anytown Medical Center",
+      address: "456 Oak Avenue, Anytown, USA",
+      phone: "(555) 123-4567",
+    },
     diagnostic: "Stomach Flu",
     summary: "Patient presented with symptoms of stomach flu.",
     additionalNotes:
@@ -71,6 +100,7 @@ export const appointments: DisplayAppointment[] = [
     patientAge: "21",
     weight: "63 kg",
     height: "183 cm",
+
     prescription: [
       {
         name: "Antiemetic Medication",
@@ -85,6 +115,11 @@ export const appointments: DisplayAppointment[] = [
   {
     date: "09 March 2023",
     doctorName: "Dr. Johnson",
+    clinic: {
+      name: "Anytown Medical Center",
+      address: "456 Oak Avenue, Anytown, USA",
+      phone: "(555) 123-4567",
+    },
     diagnostic: "Sinusitis",
     summary: "Patient presented with symptoms of sinusitis.",
     additionalNotes: "Prescribed antibiotics and saline nasal spray.",
@@ -92,6 +127,7 @@ export const appointments: DisplayAppointment[] = [
     patientAge: "22",
     weight: "64 kg",
     height: "184 cm",
+
     prescription: [
       {
         name: "Antibiotics",
@@ -104,3 +140,18 @@ export const appointments: DisplayAppointment[] = [
     ],
   },
 ];
+
+export const patient: Patient = {
+  fullname: "Ángel Eduardo Cruz García",
+  id: "CRGA010603HJCNLCA4",
+  gender: "Male",
+  age: "22",
+  birthdate: "07/03/2001",
+  address: {
+    street: "Calle de la Paz 154",
+    street2: "",
+    city: "Durango",
+    zip: "34000",
+    urbanization: "",
+  },
+};

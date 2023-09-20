@@ -2,7 +2,13 @@ import { Input, Textarea, Button, Divider } from '@nextui-org/react';
 import { useFieldArray, useForm } from 'react-hook-form';
 import { PrescriptionFormType } from './interfaces';
 
-export const PrescriptionForm = () => {
+export const PrescriptionForm = ({ patient }: {
+    patient: {
+        id: string,
+        fullname: string,
+        gender: string,
+    }
+}) => {
     const { handleSubmit, control, register, formState: { errors } } = useForm({
         defaultValues: {
             diagnostic: '',
@@ -28,10 +34,17 @@ export const PrescriptionForm = () => {
     const onSubmit = (data: PrescriptionFormType) => {
         console.log({ data })
     }
+
+    const { fullname, gender, id } = patient;
     return (
         <form className='w-full' onSubmit={handleSubmit(onSubmit)} >
             <div className='w-full flex flex-wrap gap-3 mt-4'>
                 <h4 className='font-semibold w-full'>Patient</h4>
+                <div className='w-full'>
+                    <p className="text-gray-400 text-xs">{id}</p>
+                    <p className="text-sky-600 font-semibold">{fullname} </p>
+                    <p className="text-gray-400 text-xs">{gender}</p>
+                </div>
                 <Input
                     label="height"
                     type="number"

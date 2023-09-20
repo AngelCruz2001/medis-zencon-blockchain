@@ -2,6 +2,7 @@
 
 import { Card, CardBody, } from '@nextui-org/react';
 import { Divider } from "@nextui-org/react";
+import { PrescriptionForm } from './prescription-form';
 
 const wallets = {
     doctorWallet: '0x123456789',
@@ -9,7 +10,6 @@ const wallets = {
 }
 
 export default function Page() {
-
 
     return (
         <Card className='h-full w-full max-h-full'>
@@ -32,7 +32,11 @@ export default function Page() {
 
                 <Divider />
 
-
+                <PrescriptionForm patient={{
+                    fullname: 'Christian Pablo Cruz García',
+                    gender: 'male',
+                    id: 'CRGA010603HJCNLCA4',
+                }} />
 
             </CardBody>
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { PersonalInfo } from './personal-info';
 import { MedicalInfo } from './medical-info';
 import { AppointmentsHistory } from './appointments-history';
-import { appointments } from './data';
+import { appointments, patient } from './data';
 
 export default function Page() {
 
@@ -34,13 +34,13 @@ export default function Page() {
               setCurrentTab(tabKey as string);
             }}>
               <Tab key="personal" title="Personal Info">
-                <PersonalInfo canEdit={canEdit} />
+                <PersonalInfo patient={patient} canEdit={canEdit} />
               </Tab>
               <Tab key="medical" title="Medical Info">
                 <MedicalInfo canEdit={canEdit} />
               </Tab>
               <Tab key="appointment-history" title="Appoinments history">
-                <AppointmentsHistory appointments={appointments} />
+                <AppointmentsHistory appointments={appointments} patient={patient} />
               </Tab>
             </Tabs>
           </div>
