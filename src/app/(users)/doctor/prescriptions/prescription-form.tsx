@@ -1,6 +1,7 @@
 import { Input, Textarea, Button, Divider } from '@nextui-org/react';
 import { useFieldArray, useForm } from 'react-hook-form';
 import { PrescriptionFormType } from './interfaces';
+import { getInfo, saveData } from '@/blockchain/medisFunctions';
 
 export const PrescriptionForm = ({ patient }: {
     patient: {
@@ -31,8 +32,8 @@ export const PrescriptionForm = ({ patient }: {
         name: 'prescription'
     })
 
-    const onSubmit = (data: PrescriptionFormType) => {
-        console.log({ data })
+    const onSubmit = (data) => {
+        saveData(JSON.stringify(data));
     }
 
     const { fullname, gender, id } = patient;
@@ -146,6 +147,10 @@ export const PrescriptionForm = ({ patient }: {
             <Button type='submit' color='primary' className='mt-4'>
                 Create prescription
             </Button>
+
+            <button style={{ padding: "1rem", borderRadius: ".5rem", margin: "1rem", fontWeight: "bold" }} onClick={async () => {
+                console.log(await getInfo())
+            }}>Obtener Información</button>
         </form>
     )
 }

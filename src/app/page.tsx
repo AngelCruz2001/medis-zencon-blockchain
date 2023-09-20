@@ -12,7 +12,7 @@
 "use client";
 
 import React from "react";
-import { getInfo,saveData } from "@/blockchain/medisFunctions";
+import {getInfo,saveData } from "@/blockchain/medisFunctions";
 import {useState,useEffect} from 'react';
 
 
@@ -94,10 +94,7 @@ export default function Home() {
         saveData(data);
       }}>Enviar Información</button>
       <button style={{padding:"1rem",borderRadius:".5rem",margin:"1rem",fontWeight:"bold"}} onClick={()=>{
-        getInfo().then((data)=>{
-          setDataInfo(data)
-        })
-      }}>Obtener Información</button>
+      getInfo()}}>Obtener Información</button>
     </div>
   </>
 }

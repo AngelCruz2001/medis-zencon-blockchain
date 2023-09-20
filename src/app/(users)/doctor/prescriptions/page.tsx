@@ -3,6 +3,7 @@
 import { Card, CardBody, } from '@nextui-org/react';
 import { Divider } from "@nextui-org/react";
 import { PrescriptionForm } from './prescription-form';
+import { getInfo } from '@/blockchain/medisFunctions';
 
 const wallets = {
     doctorWallet: '0x123456789',
@@ -40,6 +41,8 @@ export default function Page() {
 
             </CardBody>
 
+
+                
 
 
 
