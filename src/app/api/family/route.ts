@@ -17,8 +17,8 @@ export async function GET() {
 
     const nodoPorId = new Map();
 
-    datosNodos.forEach((nodo) => {
-      const nuevoNodo = { ...nodo, children: [] };
+    datosNodos.forEach((nodo,index) => {
+      const nuevoNodo = { ...nodo, children: [],group:index };
       arbol.nodes.push(nuevoNodo);
       nodoPorId.set(nodo.id, nuevoNodo);
     });
@@ -32,7 +32,7 @@ export async function GET() {
           arbol.links.push({
             source: nodo.id,
             target: nodoDestino.id,
-            value: i + 1,
+            group: i + 1,
           });
           const nodoOrigen = nodoPorId.get(nodo.id);
           nodoOrigen.children.push(nodoDestino);
