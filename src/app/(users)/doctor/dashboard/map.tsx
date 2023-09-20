@@ -16,7 +16,7 @@ const locationIcon = L.icon({
 export const Map = () => {
     return (
         <div className="w-full">
-            <h1 className="text-xl font-semibold mt-3 mb-2">Appointments</h1>
+            <h1 className="text-xl font-semibold mt-3 mb-2">Map</h1>
             <Card className='w-full mb-4'>
                 <CardBody>
                     <div className="flex flex-col gap-2">
