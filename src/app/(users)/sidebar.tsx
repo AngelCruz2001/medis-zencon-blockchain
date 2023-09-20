@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { Logo, DashboardIcon, PatientOverviewIcon, MedicalHistoryIcon, PrescriptionsIcon, DiagnosticToolsIcon } from "@/svg"
+import { Logo, DashboardIcon, PatientOverviewIcon, MedicalHistoryIcon, PrescriptionsIcon, DiagnosticToolsIcon, LogoutIcon } from "@/svg"
 import { usePathname } from 'next/navigation'
 import { FC } from "react";
 
@@ -36,6 +36,11 @@ const links: Link[] = [
         label: "Diagnostic Tools",
         href: pathname + "/diagnostic-tools",
         Icon: DiagnosticToolsIcon
+    },
+    {
+        label: "Log out",
+        href: pathname + "/logout",
+        Icon: LogoutIcon
     }
 ]
 
@@ -55,14 +60,26 @@ export const Sidebar = () => {
                 {
                     links.map(({ label, href, Icon }) => {
                         const isActive = pathname === href;
-                        return (
-                            <li key={href} >
-                                <Link href={href} className={`flex items-center gap-2 text-sm rounded-md p-2 transition-colors ${isActive ? linkVariants.active : linkVariants.disbled}`} >
-                                    <Icon />
-                                    {label}
-                                </Link>
-                            </li>
-                        )
+
+                        if (label === "Logout") {
+                            return (
+                                <li>
+                                    <Link href={href} className={`flex items-center gap-2 text-sm rounded-md p-2 transition-colors ${isActive ? linkVariants.active : linkVariants.disbled} mt-5`} >
+                                        <Icon />
+                                        {label}
+                                    </Link>
+                                </li>
+                            )
+                        } else {
+                            return (
+                                <li>
+                                    <Link href={href} className={`flex items-center gap-2 text-sm rounded-md p-2 transition-colors ${isActive ? linkVariants.active : linkVariants.disbled}`} >
+                                        <Icon />
+                                        {label}
+                                    </Link>
+                                </li>
+                            )
+                        }
                     })
                 }
             </ul>
