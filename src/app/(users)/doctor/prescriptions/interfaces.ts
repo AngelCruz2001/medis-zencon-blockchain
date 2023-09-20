@@ -1,4 +1,4 @@
-export interface MedicalRecord {
+export interface PrescriptionFormType {
   diagnostic: string;
   summary: string;
   additionalNotes: string;
