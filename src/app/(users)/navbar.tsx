@@ -32,7 +32,7 @@ const messages: any = []
 export const Navbar = () => {
 
     return (
-        <nav className='h-16 w-full bg-white shadow-light text-black flex items-center px-4 justify-end gap-4 relative' >
+        <nav className='h-16 w-full bg-white shadow-light text-black flex items-center px-4 justify-end gap-4 relative z-10' >
 
             <Dropdown>
                 <DropdownTrigger>

@@ -18,14 +18,9 @@ const links: Link[] = [
         Icon: DashboardIcon
     },
     {
-        label: "Patient Overview",
-        href: pathname + "/patient-overview",
+        label: "Patients",
+        href: pathname + "/patients",
         Icon: PatientOverviewIcon
-    },
-    {
-        label: "Medical History",
-        href: pathname + "/medical-history",
-        Icon: MedicalHistoryIcon
     },
     {
         label: "Prescriptions",
@@ -37,11 +32,6 @@ const links: Link[] = [
         href: pathname + "/diagnostic-tools",
         Icon: DiagnosticToolsIcon
     },
-    {
-        label: "Log out",
-        href: pathname + "/logout",
-        Icon: LogoutIcon
-    }
 ]
 
 const linkVariants = {
@@ -52,13 +42,13 @@ const linkVariants = {
 export const Sidebar = () => {
     const pathname = usePathname();
     return (
-        <nav className="bg-white h-[100vh] max-h-[100vh] w-[280px] py-4 px-5 shadow-light z-10" >
+        <nav className="bg-white h-[100vh] max-h-[100vh] w-[250px] py-4 px-5 shadow-light z-20" >
             <div className="w-[80%] mx-auto">
                 <Logo />
             </div>
             <ul className="flex flex-col gap-2 mt-14" >
                 {
-                    links.map(({ label, href, Icon }) => {
+                    links.map(({ label, href, Icon }, index) => {
                         const isActive = pathname === href;
 
                         if (label === "Logout") {
@@ -72,7 +62,7 @@ export const Sidebar = () => {
                             )
                         } else {
                             return (
-                                <li>
+                                <li key={index}>
                                     <Link href={href} className={`flex items-center gap-2 text-sm rounded-md p-2 transition-colors ${isActive ? linkVariants.active : linkVariants.disbled}`} >
                                         <Icon />
                                         {label}

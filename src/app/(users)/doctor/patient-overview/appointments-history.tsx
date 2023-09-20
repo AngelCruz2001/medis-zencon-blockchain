@@ -19,7 +19,7 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
         <>
             <ul className="flex gap-4 flex-wrap" >
                 {
-                    appointments.map(({ additionalNotes, date, diagnostic, doctorName, followUp, height, weight, patientAge, prescription, summary }, index) => {
+                    appointments.map(({ date, diagnostic, weight, patientAge, }, index) => {
 
                         return (
                             <li key={index} className="min-w-[250px] max-w-full">
