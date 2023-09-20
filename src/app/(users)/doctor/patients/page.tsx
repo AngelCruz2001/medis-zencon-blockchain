@@ -10,8 +10,6 @@ const genderColorMap: Record<string, ChipProps["color"]> = {
     female: "danger",
 };
 
-
-
 export default function Page() {
     const renderCell = React.useCallback((user, columnKey) => {
         const cellValue = user[columnKey];

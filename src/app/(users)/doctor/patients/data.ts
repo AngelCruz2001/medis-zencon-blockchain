@@ -19,6 +19,17 @@ export const columns = [
 ];
 export const patients: DisplayPatient[] = [
   {
+    id: "0",
+    name: "Ángel Cruz García",
+    age: "22",
+    city: "Durango",
+    zipCode: "34000",
+    avatar: "https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.6435-1/117045249_1977291882402390_5907872103562619701_n.jpg?stp=dst-jpg_p160x160&_nc_cat=108&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeH2EbO4lbNBb6ZeKbrIXb3b8T6EHDN1PmHxPoQcM3U-Yd4xpL6HOeslhtvkqpn-RXEhKwhMw0CRjxcCjexghlgg&_nc_ohc=ZMaoI3tJ0oQAX_xXcyO&_nc_ht=scontent.fsdu2-2.fna&oh=00_AfCke7_EJ4gvIU3mY3OKXGH7zBdTXD97_huMVkjt2nS5wg&oe=65325332",
+    phonenumber: "+52 618 325 9226",
+    gender: "male",
+    email: "angi_ed01@hotmail.com"
+  },
+  {
     id: "1",
     name: "Sarah Davis",
     age: "28",

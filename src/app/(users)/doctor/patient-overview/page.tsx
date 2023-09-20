@@ -18,8 +18,8 @@ export default function Page() {
       <Card className="mt-7 min-h-[500px]" >
         <CardBody>
           <div className='flex gap-3 items-center' >
-            <Avatar src="https://i.pravatar.cc/150?" className="w-20 h-20 text-large" />
-            <h1 className='text-2xl font-semibold w-72' >Ángel Eduardo Cruz García</h1>
+            <Avatar src="https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.6435-1/117045249_1977291882402390_5907872103562619701_n.jpg?stp=dst-jpg_p160x160&_nc_cat=108&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeH2EbO4lbNBb6ZeKbrIXb3b8T6EHDN1PmHxPoQcM3U-Yd4xpL6HOeslhtvkqpn-RXEhKwhMw0CRjxcCjexghlgg&_nc_ohc=ZMaoI3tJ0oQAX_xXcyO&_nc_ht=scontent.fsdu2-2.fna&oh=00_AfCke7_EJ4gvIU3mY3OKXGH7zBdTXD97_huMVkjt2nS5wg&oe=65325332" className="w-20 h-20 text-large" />
+            <h1 className='text-2xl font-semibold w-72' >Ángel Cruz García</h1>
             {
               currentTab !== 'appointment-history' && (
                 <Button className='ml-auto' color={canEdit ? 'danger' : 'primary'} disabled={!canEdit} onPress={() => setCanEdit(!canEdit)}>

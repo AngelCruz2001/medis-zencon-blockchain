@@ -2,7 +2,6 @@
 import PatientTable from './patientTable';
 import Stats from './stats';
 import { MostPrescribed } from './MostPrescribed';
-import { Map } from './map';
 
 export default function Page() {
 
@@ -18,12 +17,6 @@ export default function Page() {
         <section className='flex flex-1 md:flex-none'>
           <MostPrescribed />
         </section>
-
-      </div>
-
-      <div className="flex w-full mt-3">
-
-        <Map />
 
       </div>
     </div>
