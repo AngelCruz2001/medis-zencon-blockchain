@@ -3,6 +3,8 @@ import { useState } from 'react';
 import PatientTable from './patientTable';
 import Stats from './stats';
 import { MostPrescribed } from './MostPrescribed';
+import { Map } from './map';
+import { CardBody } from '@nextui-org/react';
 export default function Page() {
 
   const appointmentsData = [
@@ -87,6 +89,14 @@ export default function Page() {
         <section className='flex'>
           <MostPrescribed />
         </section>
+        
+      </div>
+      <div className="flex w-full mt-3">
+
+      <Map/>
+
+      </div>
+      <div>
       </div>
 
     </div>
