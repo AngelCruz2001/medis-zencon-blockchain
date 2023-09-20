@@ -27,9 +27,9 @@ export const AppointmentsHistory = ({ appointments, patient }: { appointments: D
                                     <CardBody>
                                         <span className="text-xs ml-auto mb-2 text-primary font-medium" >{date}
                                         </span>
-                                        <span className="ml-auto text-xs text-gray-400" ><b>Age:</b> {patientAge}
+                                        <span className="ml-auto text-xs text-gray-400" >Age: <b>{patientAge}</b>
                                         </span>
-                                        <span className="ml-auto text-xs text-gray-400" ><b>Weight:</b> {weight}
+                                        <span className="ml-auto text-xs text-gray-400" >Weight: <b>{weight}</b>
                                         </span>
                                         <h3 className="mt-4 text-md font-medium">Diagnostic</h3>
                                         <p className="text-sm text-gray-400">{diagnostic}</p>
