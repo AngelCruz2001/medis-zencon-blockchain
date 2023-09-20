@@ -161,7 +161,9 @@ export const PrescriptionForm = ({ patient }: {
                     const data = await getInfo();
                     setRecipeData(data);
                     onOpen();
-                }}>Get info</button>
+                }}>
+                    Get info
+                </button>
             </form>
 
             <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
