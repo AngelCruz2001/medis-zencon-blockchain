@@ -15,10 +15,10 @@ export default function Stats() {
                         <div className=' rounded-full fill-primary bg-primary p-2' >
                             <CircularProgress
                                 classNames={{
-                                    svg: "w-36 h-36 drop-shadow-md",
+                                    svg: "w-20 h-20 drop-shadow-md",
                                     indicator: "stroke-white",
                                     track: "stroke-white/25",
-                                    value: "text-3xl font-semibold text-white",
+                                    value: "text-xl font-semibold text-white",
                                 }}
                                 value={70}
                                 strokeWidth={4}
