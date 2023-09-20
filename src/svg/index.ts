@@ -7,6 +7,7 @@ import { DiagnosticToolsIcon } from "./diagnostic-tools-icon";
 import { NotificationsIcon } from "./notifications-icon";
 import { MessagesIcon } from "./messages-icon";
 import { AddIcon } from "./add-icon";
+import { LogoutIcon } from "./logout-icon";
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   NotificationsIcon,
   MessagesIcon,
   AddIcon,
+  LogoutIcon
 };
