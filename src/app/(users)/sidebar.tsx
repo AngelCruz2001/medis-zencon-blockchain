@@ -56,7 +56,7 @@ export const Sidebar = () => {
                     links.map(({ label, href, Icon }) => {
                         const isActive = pathname === href;
                         return (
-                            <li>
+                            <li key={href} >
                                 <Link href={href} className={`flex items-center gap-2 text-sm rounded-md p-2 transition-colors ${isActive ? linkVariants.active : linkVariants.disbled}`} >
                                     <Icon />
                                     {label}

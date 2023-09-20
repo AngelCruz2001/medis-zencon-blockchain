@@ -103,7 +103,6 @@ export const MedicalInfo = ({ canEdit }: { canEdit: boolean }) => {
                                 className='py-3 flex flex-col gap-2'
                                 onSubmit={handleSubmit(hanldeSubmit)}>
                                 <Input
-                                    labelPlacement="outside"
                                     type="text"
                                     defaultValue=""
                                     className="max-w-xs"

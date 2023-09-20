@@ -1,8 +1,12 @@
 
 
 import { Tab, Input, Button } from '@nextui-org/react'
+import { useForm } from 'react-hook-form'
 
 export const PersonalInfo = ({ canEdit }: { canEdit: boolean }) => {
+
+    const { } = useForm();
+
     return (
         <>
             <div className='flex flex-wrap gap-2'>
