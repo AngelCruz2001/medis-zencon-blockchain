@@ -43,16 +43,16 @@ export const Mapa = () => {
                     <h1>Hola aquí va el mapa</h1>
 
                     <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: "300px", width: "100%" }}>
-  <TileLayer
-    url="https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png"
-    maxZoom={19}
-  />
-  <Marker position={[51.505, -0.09]}>
-    <Popup>
-      A pretty CSS3 popup. <br /> Easily customizable.
-    </Popup>
-  </Marker>
-</MapContainer>
+                        <TileLayer
+                            url="https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png"
+                            maxZoom={19}
+                        />
+                        <Marker position={[51.505, -0.09]}>
+                            <Popup>
+                                A pretty CSS3 popup. <br /> Easily customizable.
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
 
 
 
