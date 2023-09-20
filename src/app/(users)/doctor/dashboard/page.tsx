@@ -5,6 +5,7 @@ import Stats from './stats';
 import { MostPrescribed } from './MostPrescribed';
 import { Map } from './map';
 import { CardBody } from '@nextui-org/react';
+
 export default function Page() {
 
   const appointmentsData = [
@@ -91,16 +92,9 @@ export default function Page() {
         </section>
 
       </div>
+
       <div className="flex w-full mt-3">
-<<<<<<< HEAD
-
         <Map />
-
-=======
-        <Map />
->>>>>>> 05abdc41f9c7783c5ebea53a778e91174f75ffb2
-      </div>
-      <div>
       </div>
 
     </div>
