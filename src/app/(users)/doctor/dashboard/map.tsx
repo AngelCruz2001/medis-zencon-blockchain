@@ -14,20 +14,20 @@ export const Map = () => {
                 <div className="flex flex-col gap-2 mt-5">
                     <h1>Hola aquí va el mapa</h1>
 
-                    <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: "300px", width: "100%" }}>
+                    <MapContainer center={[-22.9866, -43.1982]} zoom={13} style={{ height: "300px", width: "100%" }}>
                         <TileLayer
                             url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
                             maxZoom={19}
                         />
-                         <Circle 
-        center={[51.508, -0.11]} 
-        pathOptions={{ color: 'red', fillColor: '#f03', fillOpacity: 0.5 }} 
-        radius={500}>
-        <Popup>
-            I am a circle.
-        </Popup>
-    </Circle>
-                        <Marker position={[51.505, -0.09]}>
+                        <Circle
+                            center={[-22.9866, -43.1982]}
+                            pathOptions={{ color: 'red', fillColor: '#f03', fillOpacity: 0.5 }}
+                            radius={500}>
+                            <Popup>
+                                I am a circle.
+                            </Popup>
+                        </Circle>
+                        <Marker position={[-22.9866, -43.1982]}>
                             <Popup>
                                 A pretty CSS3 popup. <br /> Easily customizable.
                             </Popup>
