@@ -2,6 +2,7 @@ import { Avatar, Card, CardBody, CardHeader } from '@nextui-org/react'
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import { Circle } from 'react-leaflet';
 
 export const Map = () => {
     return (
@@ -18,6 +19,14 @@ export const Map = () => {
                             url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
                             maxZoom={19}
                         />
+                         <Circle 
+        center={[51.508, -0.11]} 
+        pathOptions={{ color: 'red', fillColor: '#f03', fillOpacity: 0.5 }} 
+        radius={500}>
+        <Popup>
+            I am a circle.
+        </Popup>
+    </Circle>
                         <Marker position={[51.505, -0.09]}>
                             <Popup>
                                 A pretty CSS3 popup. <br /> Easily customizable.
